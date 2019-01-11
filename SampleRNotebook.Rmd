@@ -1,0 +1,103 @@
+---
+title: "Sample R Notebook"
+author: Sonia Mazzi
+date: 11/01/2019
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. 
+
+##Features of R markdown notebooks
+
+An R markdown notebook has the following characteristics
+
+* Reproducible workflow by default.
+
+* Code, output and narrative in a single document.
+
+* Output to multiple formats (html, PDF, Word).
+
+* Output inline with code: When you execute code within the notebook, the results appear beneath the code. 
+
+* It is possible to share output and code in a single file.
+
+##R Markdown notebook file formats
+
+* The notebook source code is a .Rmd file
+
+* Notebooks have an associated HTML file (.nb.html). It is created automatically when the .Rmd is saved.
+When you save a notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+* The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+
+
+##Executing R code
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+```{r}
+help(cars)
+```
+
+```{r}
+#print the names of the data frame cars
+names(cars)
+```
+
+```{r}
+summary(cars)
+```
+
+##`starwars` data frame
+
+```{r}
+#the data frame starwars is in the package dplyr. We load it
+library(dplyr)
+#print the data frame
+starwars
+```
+
+```{r}
+#extract names of female characters in base R
+names.f = starwars$name[starwars$gender == "female" & is.na(starwars$gender) == "FALSE"]
+names.f
+```
+
+```{r}
+#Each entry of the column films is a list
+#Films where Luke Skywalker appears as a character
+starwars$films[1]
+```
+
+
+```{r}
+# It's easier to use "filter" from the package dplyr
+filter(starwars, hair_color == "none" & eye_color == "black")
+```
+
+```{r}
+# Multiple arguments are equivalent to and
+filter(starwars, hair_color == "none", eye_color == "black")
+```
+
+
+```{r}
+filter(starwars, hair_color == "none" | eye_color == "black")
+```
+
+##Something fancier
+
+```{r}
+library(dygraphs)
+dygraph(nhtemp, main = "New Haven Temperatures") %>% 
+  dyRangeSelector(dateWindow = c("1920-01-01", "1960-01-01"))
+```
+
+
