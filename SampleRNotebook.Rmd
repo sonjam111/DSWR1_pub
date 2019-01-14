@@ -66,8 +66,34 @@ starwars
 
 ```{r}
 #extract names of female characters in base R
+names.f = starwars$name[starwars$gender == "female"]
+names.f
+```
+ 
+ As can be seen in the output there are some missing values.
+
+```{r}
+#extract names of female characters and exclude the missing values
 names.f = starwars$name[starwars$gender == "female" & is.na(starwars$gender) == "FALSE"]
 names.f
+```
+
+
+```{r}
+#extracting the number of characters by eye colour
+summary(as.factor(starwars$eye_color))
+```
+
+Equivalently, we can use `dplyr` functions and the piping operator to save us some typing
+
+```{r}
+starwars %>% group_by(eye_color) %>% summarise(nr_char = n())
+```
+Without the piping operator, in order to obtain the same output:
+
+```{r}
+aux = group_by(starwars, eye_color)
+summarise(aux, nr_char = n())
 ```
 
 ```{r}
@@ -75,22 +101,68 @@ names.f
 #Films where Luke Skywalker appears as a character
 starwars$films[1]
 ```
+Suppose I would like to extract the rows in `starwars` corresponding to characters with no hair colour and black eyes.
 
+In base R this would be
+```{r}
+starwars[starwars$hair_color == "none" & starwars$eye_color == "black", ]
+```
+
+In `dplyr` one can use the filter function and the results is more meaningful syntax
 
 ```{r}
 # It's easier to use "filter" from the package dplyr
-filter(starwars, hair_color == "none" & eye_color == "black")
+filter(starwars, hair_color == "brown" & eye_color == "black")
 ```
+
+Equivalently,
 
 ```{r}
 # Multiple arguments are equivalent to and
 filter(starwars, hair_color == "none", eye_color == "black")
 ```
 
+If we can characters who have either no hair colour or black eyes
 
 ```{r}
 filter(starwars, hair_color == "none" | eye_color == "black")
 ```
+
+
+**EXERCISE**: extract the names of characters taller than Anakin Skywalker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In base R
+```{r}
+ash = starwars$height[starwars$name == "Anakin Skywalker"]
+starwars$name[starwars$height > ash]
+```
+
+Using `dplyr`
+
+```{r}
+starwars %>% filter(height > ash) %>% select(name)
+```
+
+If we want to exclude missing names
+
+```{r}
+starwars %>% filter(height > ash, is.na(name) == "FALSE") %>% select(name)
+```
+
+
 
 ##Something fancier
 
