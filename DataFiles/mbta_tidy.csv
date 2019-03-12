@@ -1,0 +1,465 @@
+mode,year,month,NrPassengers
+Boat,2007,1,4
+Bus,2007,1,335.819
+Commuter Rail,2007,1,142.2
+Heavy Rail,2007,1,435.294
+Light Rail,2007,1,227.231
+Private Bus,2007,1,4.772
+RIDE,2007,1,4.9
+Trackless Trolley,2007,1,12.757
+Boat,2007,2,3.6
+Bus,2007,2,338.675
+Commuter Rail,2007,2,138.5
+Heavy Rail,2007,2,448.271
+Light Rail,2007,2,240.262
+Private Bus,2007,2,4.417
+RIDE,2007,2,5
+Trackless Trolley,2007,2,12.913
+Boat,2007,3,40
+Bus,2007,3,339.867
+Commuter Rail,2007,3,137.7
+Heavy Rail,2007,3,458.583
+Light Rail,2007,3,241.444
+Private Bus,2007,3,4.574
+RIDE,2007,3,5.5
+Trackless Trolley,2007,3,13.057
+Boat,2007,4,4.3
+Bus,2007,4,352.162
+Commuter Rail,2007,4,139.5
+Heavy Rail,2007,4,472.201
+Light Rail,2007,4,255.557
+Private Bus,2007,4,4.542
+RIDE,2007,4,5.4
+Trackless Trolley,2007,4,13.444
+Boat,2007,5,4.9
+Bus,2007,5,354.367
+Commuter Rail,2007,5,139
+Heavy Rail,2007,5,474.579
+Light Rail,2007,5,248.262
+Private Bus,2007,5,4.768
+RIDE,2007,5,5.4
+Trackless Trolley,2007,5,13.479
+Boat,2007,6,5.8
+Bus,2007,6,350.543
+Commuter Rail,2007,6,143
+Heavy Rail,2007,6,477.032
+Light Rail,2007,6,246.108
+Private Bus,2007,6,4.722
+RIDE,2007,6,5.6
+Trackless Trolley,2007,6,13.323
+Boat,2007,7,6.521
+Bus,2007,7,357.519
+Commuter Rail,2007,7,142.391
+Heavy Rail,2007,7,471.735
+Light Rail,2007,7,243.286
+Private Bus,2007,7,3.936
+RIDE,2007,7,5.253
+Trackless Trolley,2007,7,13.311
+Boat,2007,8,6.572
+Bus,2007,8,355.479
+Commuter Rail,2007,8,142.364
+Heavy Rail,2007,8,461.605
+Light Rail,2007,8,234.907
+Private Bus,2007,8,3.946
+RIDE,2007,8,5.308
+Trackless Trolley,2007,8,13.142
+Boat,2007,9,5.469
+Bus,2007,9,372.598
+Commuter Rail,2007,9,143.051
+Heavy Rail,2007,9,499.566
+Light Rail,2007,9,265.748
+Private Bus,2007,9,4.329
+RIDE,2007,9,5.609
+Trackless Trolley,2007,9,14.393
+Boat,2007,10,5.145
+Bus,2007,10,368.847
+Commuter Rail,2007,10,146.542
+Heavy Rail,2007,10,457.741
+Light Rail,2007,10,241.434
+Private Bus,2007,10,4.315
+RIDE,2007,10,5.806
+Trackless Trolley,2007,10,14.622
+Boat,2007,11,3.763
+Bus,2007,11,330.826
+Commuter Rail,2007,11,145.089
+Heavy Rail,2007,11,488.348
+Light Rail,2007,11,250.497
+Private Bus,2007,11,4.081
+RIDE,2007,11,5.667
+Trackless Trolley,2007,11,13.624
+Boat,2007,12,2.985
+Bus,2007,12,312.92
+Commuter Rail,2007,12,141.585
+Heavy Rail,2007,12,448.268
+Light Rail,2007,12,233.379
+Private Bus,2007,12,3.708
+RIDE,2007,12,5.062
+Trackless Trolley,2007,12,12.41
+Boat,2008,1,3.175
+Bus,2008,1,340.324
+Commuter Rail,2008,1,142.145
+Heavy Rail,2008,1,472.624
+Light Rail,2008,1,241.223
+Private Bus,2008,1,4.122
+RIDE,2008,1,5.535
+Trackless Trolley,2008,1,13.902
+Boat,2008,2,3.111
+Bus,2008,2,352.905
+Commuter Rail,2008,2,142.607
+Heavy Rail,2008,2,492.1
+Light Rail,2008,2,249.306
+Private Bus,2008,2,4.079
+RIDE,2008,2,5.704
+Trackless Trolley,2008,2,14.172
+Boat,2008,3,3.512
+Bus,2008,3,361.155
+Commuter Rail,2008,3,137.453
+Heavy Rail,2008,3,494.046
+Light Rail,2008,3,253.132
+Private Bus,2008,3,4.175
+RIDE,2008,3,6.164
+Trackless Trolley,2008,3,14.394
+Boat,2008,4,4.164
+Bus,2008,4,368.189
+Commuter Rail,2008,4,140.389
+Heavy Rail,2008,4,513.204
+Light Rail,2008,4,271.07
+Private Bus,2008,4,4.144
+RIDE,2008,4,6.263
+Trackless Trolley,2008,4,14.722
+Boat,2008,5,4.015
+Bus,2008,5,363.903
+Commuter Rail,2008,5,142.585
+Heavy Rail,2008,5,507.952
+Light Rail,2008,5,258.351
+Private Bus,2008,5,4.079
+RIDE,2008,5,6.279
+Trackless Trolley,2008,5,14.427
+Boat,2008,6,5.189
+Bus,2008,6,362.962
+Commuter Rail,2008,6,142.057
+Heavy Rail,2008,6,518.349
+Light Rail,2008,6,266.961
+Private Bus,2008,6,4.4
+RIDE,2008,6,6.294
+Trackless Trolley,2008,6,14.515
+Boat,2008,7,6.016
+Bus,2008,7,370.921
+Commuter Rail,2008,7,145.731
+Heavy Rail,2008,7,512.309
+Light Rail,2008,7,270.158
+Private Bus,2008,7,4.548
+RIDE,2008,7,6.028
+Trackless Trolley,2008,7,14.392
+Boat,2008,8,5.8
+Bus,2008,8,361.057
+Commuter Rail,2008,8,144.565
+Heavy Rail,2008,8,476.99
+Light Rail,2008,8,239.344
+Private Bus,2008,8,4.286
+RIDE,2008,8,6.148
+Trackless Trolley,2008,8,13.716
+Boat,2008,9,4.587
+Bus,2008,9,389.537
+Commuter Rail,2008,9,141.907
+Heavy Rail,2008,9,517.324
+Light Rail,2008,9,258.171
+Private Bus,2008,9,4.878
+RIDE,2008,9,6.503
+Trackless Trolley,2008,9,15.109
+Boat,2008,10,4.285
+Bus,2008,10,357.974
+Commuter Rail,2008,10,151.957
+Heavy Rail,2008,10,523.644
+Light Rail,2008,10,250.063
+Private Bus,2008,10,4.556
+RIDE,2008,10,6.678
+Trackless Trolley,2008,10,13.014
+Boat,2008,11,3.488
+Bus,2008,11,345.423
+Commuter Rail,2008,11,152.952
+Heavy Rail,2008,11,487.115
+Light Rail,2008,11,232.068
+Private Bus,2008,11,4.302
+RIDE,2008,11,6.41
+Trackless Trolley,2008,11,12.596
+Boat,2008,12,3.007
+Bus,2008,12,325.767
+Commuter Rail,2008,12,140.81
+Heavy Rail,2008,12,446.743
+Light Rail,2008,12,205.42
+Private Bus,2008,12,3.42
+RIDE,2008,12,5.957
+Trackless Trolley,2008,12,11.91
+Boat,2009,1,3.014
+Bus,2009,1,338.532
+Commuter Rail,2009,1,141.448
+Heavy Rail,2009,1,461.004
+Light Rail,2009,1,215.66
+Private Bus,2009,1,3.584
+RIDE,2009,1,5.991
+Trackless Trolley,2009,1,12.301
+Boat,2009,2,3.196
+Bus,2009,2,360.412
+Commuter Rail,2009,2,143.529
+Heavy Rail,2009,2,482.407
+Light Rail,2009,2,228.737
+Private Bus,2009,2,3.604
+RIDE,2009,2,6.708
+Trackless Trolley,2009,2,9.645
+Boat,2009,3,3.33
+Bus,2009,3,353.686
+Commuter Rail,2009,3,142.893
+Heavy Rail,2009,3,467.224
+Light Rail,2009,3,222.844
+Private Bus,2009,3,2.586
+RIDE,2009,3,6.675
+Trackless Trolley,2009,3,11.674
+Boat,2009,4,4.049
+Bus,2009,4,359.38
+Commuter Rail,2009,4,142.34
+Heavy Rail,2009,4,493.152
+Light Rail,2009,4,238.232
+Private Bus,2009,4,2.824
+RIDE,2009,4,6.734
+Trackless Trolley,2009,4,11.326
+Boat,2009,5,4.119
+Bus,2009,5,354.75
+Commuter Rail,2009,5,144.225
+Heavy Rail,2009,5,475.634
+Light Rail,2009,5,224.962
+Private Bus,2009,5,2.735
+RIDE,2009,5,6.693
+Trackless Trolley,2009,5,12.49
+Boat,2009,6,4.9
+Bus,2009,6,347.865
+Commuter Rail,2009,6,142.006
+Heavy Rail,2009,6,473.099
+Light Rail,2009,6,226.259
+Private Bus,2009,6,2.763
+RIDE,2009,6,6.79
+Trackless Trolley,2009,6,12.382
+Boat,2009,7,6.444
+Bus,2009,7,339.477
+Commuter Rail,2009,7,137.691
+Heavy Rail,2009,7,470.828
+Light Rail,2009,7,230.308
+Private Bus,2009,7,2.655
+RIDE,2009,7,6.249
+Trackless Trolley,2009,7,11.426
+Boat,2009,8,5.903
+Bus,2009,8,332.661
+Commuter Rail,2009,8,139.158
+Heavy Rail,2009,8,466.676
+Light Rail,2009,8,231.783
+Private Bus,2009,8,2.504
+RIDE,2009,8,6.423
+Trackless Trolley,2009,8,12.05
+Boat,2009,9,4.696
+Bus,2009,9,374.26
+Commuter Rail,2009,9,139.087
+Heavy Rail,2009,9,500.403
+Light Rail,2009,9,250.922
+Private Bus,2009,9,2.716
+RIDE,2009,9,6.69
+Trackless Trolley,2009,9,12.79
+Boat,2009,10,4.212
+Bus,2009,10,385.868
+Commuter Rail,2009,10,137.104
+Heavy Rail,2009,10,513.406
+Light Rail,2009,10,230.739
+Private Bus,2009,10,2.584
+RIDE,2009,10,6.897
+Trackless Trolley,2009,10,13.252
+Boat,2009,11,3.576
+Bus,2009,11,366.98
+Commuter Rail,2009,11,129.343
+Heavy Rail,2009,11,480.278
+Light Rail,2009,11,214.711
+Private Bus,2009,11,2.721
+RIDE,2009,11,6.565
+Trackless Trolley,2009,11,12.651
+Boat,2009,12,3.113
+Bus,2009,12,332.394
+Commuter Rail,2009,12,126.066
+Heavy Rail,2009,12,440.925
+Light Rail,2009,12,194.446
+Private Bus,2009,12,2.365
+RIDE,2009,12,6.454
+Trackless Trolley,2009,12,11.62
+Boat,2010,1,3.207
+Bus,2010,1,362.226
+Commuter Rail,2010,1,130.91
+Heavy Rail,2010,1,464.069
+Light Rail,2010,1,204.396
+Private Bus,2010,1,2.682
+RIDE,2010,1,6.516
+Trackless Trolley,2010,1,12.265
+Boat,2010,2,3.195
+Bus,2010,2,361.138
+Commuter Rail,2010,2,131.918
+Heavy Rail,2010,2,480.121
+Light Rail,2010,2,213.136
+Private Bus,2010,2,2.498
+RIDE,2010,2,6.665
+Trackless Trolley,2010,2,12.558
+Boat,2010,3,3.481
+Bus,2010,3,373.443
+Commuter Rail,2010,3,131.252
+Heavy Rail,2010,3,483.397
+Light Rail,2010,3,211.693
+Private Bus,2010,3,2.55
+RIDE,2010,3,7.066
+Trackless Trolley,2010,3,12.673
+Boat,2010,4,4.452
+Bus,2010,4,378.611
+Commuter Rail,2010,4,131.722
+Heavy Rail,2010,4,502.374
+Light Rail,2010,4,227.246
+Private Bus,2010,4,2.639
+RIDE,2010,4,7.166
+Trackless Trolley,2010,4,13.017
+Boat,2010,5,4.415
+Bus,2010,5,380.171
+Commuter Rail,2010,5,128.8
+Heavy Rail,2010,5,487.4
+Light Rail,2010,5,217.805
+Private Bus,2010,5,2.686
+RIDE,2010,5,7.1
+Trackless Trolley,2010,5,12.771
+Boat,2010,6,5.411
+Bus,2010,6,363.275
+Commuter Rail,2010,6,129.144
+Heavy Rail,2010,6,490.263
+Light Rail,2010,6,215.922
+Private Bus,2010,6,2.646
+RIDE,2010,6,7.46
+Trackless Trolley,2010,6,11.473
+Boat,2010,7,6.513
+Bus,2010,7,353.04
+Commuter Rail,2010,7,122.935
+Heavy Rail,2010,7,488.587
+Light Rail,2010,7,218.729
+Private Bus,2010,7,2.547
+RIDE,2010,7,6.965
+Trackless Trolley,2010,7,6.584
+Boat,2010,8,6.269
+Bus,2010,8,343.688
+Commuter Rail,2010,8,129.732
+Heavy Rail,2010,8,473.731
+Light Rail,2010,8,210.53
+Private Bus,2010,8,2.433
+RIDE,2010,8,7.045
+Trackless Trolley,2010,8,6.316
+Boat,2010,9,4.699
+Bus,2010,9,381.622
+Commuter Rail,2010,9,132.892
+Heavy Rail,2010,9,521.099
+Light Rail,2010,9,236.368
+Private Bus,2010,9,2.652
+RIDE,2010,9,7.349
+Trackless Trolley,2010,9,6.436
+Boat,2010,10,4.402
+Bus,2010,10,384.987
+Commuter Rail,2010,10,131.033
+Heavy Rail,2010,10,532.403
+Light Rail,2010,10,236.366
+Private Bus,2010,10,2.616
+RIDE,2010,10,7.646
+Trackless Trolley,2010,10,6.819
+Boat,2010,11,3.731
+Bus,2010,11,367.955
+Commuter Rail,2010,11,130.889
+Heavy Rail,2010,11,502.887
+Light Rail,2010,11,221.881
+Private Bus,2010,11,2.528
+RIDE,2010,11,7.444
+Trackless Trolley,2010,11,6.415
+Boat,2010,12,3.156
+Bus,2010,12,326.338
+Commuter Rail,2010,12,121.422
+Heavy Rail,2010,12,450.433
+Light Rail,2010,12,196.211
+Private Bus,2010,12,2.379
+RIDE,2010,12,7.199
+Trackless Trolley,2010,12,5.777
+Boat,2011,1,3.14
+Bus,2011,1,334.958
+Commuter Rail,2011,1,128.396
+Heavy Rail,2011,1,468.418
+Light Rail,2011,1,198.45
+Private Bus,2011,1,2.213
+RIDE,2011,1,6.735
+Trackless Trolley,2011,1,11.104
+Boat,2011,2,3.284
+Bus,2011,2,346.234
+Commuter Rail,2011,2,125.463
+Heavy Rail,2011,2,504.068
+Light Rail,2011,2,219.886
+Private Bus,2011,2,2.57
+RIDE,2011,2,7.463
+Trackless Trolley,2011,2,11.695
+Boat,2011,3,3.674
+Bus,2011,3,380.399
+Commuter Rail,2011,3,134.374
+Heavy Rail,2011,3,516.73
+Light Rail,2011,3,227.935
+Private Bus,2011,3,2.559
+RIDE,2011,3,8.387
+Trackless Trolley,2011,3,12.601
+Boat,2011,4,4.251
+Bus,2011,4,380.446
+Commuter Rail,2011,4,134.169
+Heavy Rail,2011,4,528.631
+Light Rail,2011,4,242.28
+Private Bus,2011,4,2.762
+RIDE,2011,4,8.145
+Trackless Trolley,2011,4,12.599
+Boat,2011,5,4.431
+Bus,2011,5,385.289
+Commuter Rail,2011,5,136.14
+Heavy Rail,2011,5,528.122
+Light Rail,2011,5,225.776
+Private Bus,2011,5,2.776
+RIDE,2011,5,8.059
+Trackless Trolley,2011,5,12.291
+Boat,2011,6,5.474
+Bus,2011,6,376.317
+Commuter Rail,2011,6,135.581
+Heavy Rail,2011,6,529.528
+Light Rail,2011,6,221.865
+Private Bus,2011,6,2.815
+RIDE,2011,6,8.377
+Trackless Trolley,2011,6,12.128
+Boat,2011,7,6.581
+Bus,2011,7,361.585
+Commuter Rail,2011,7,132.41
+Heavy Rail,2011,7,532.888
+Light Rail,2011,7,231.01
+Private Bus,2011,7,2.671
+RIDE,2011,7,7.902
+Trackless Trolley,2011,7,11.06
+Boat,2011,8,6.733
+Bus,2011,8,353.793
+Commuter Rail,2011,8,130.616
+Heavy Rail,2011,8,508.145
+Light Rail,2011,8,220.164
+Private Bus,2011,8,2.655
+RIDE,2011,8,8.071
+Trackless Trolley,2011,8,11.091
+Boat,2011,9,5.003
+Bus,2011,9,388.271
+Commuter Rail,2011,9,136.901
+Heavy Rail,2011,9,550.137
+Light Rail,2011,9,244.949
+Private Bus,2011,9,2.843
+RIDE,2011,9,8.318
+Trackless Trolley,2011,9,12.332
+Boat,2011,10,4.484
+Bus,2011,10,398.456
+Commuter Rail,2011,10,128.72
+Heavy Rail,2011,10,554.932
+Light Rail,2011,10,237.768
+Private Bus,2011,10,2.967
+RIDE,2011,10,8.598
+Trackless Trolley,2011,10,12.297
