@@ -42,12 +42,14 @@ plot(cars)
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
 
+
+
 ```{r}
 help(cars)
 ```
 
 ```{r}
-#print the names of the data frame cars
+#print the names of the columns in the data frame cars
 names(cars)
 ```
 
@@ -55,10 +57,10 @@ names(cars)
 summary(cars)
 ```
 
-##`starwars` data frame
+##`starwars` data
 
 ```{r}
-#the data frame starwars is in the package dplyr. We load it
+#the data frame `starwars` is part of the package `dplyr`. We load it
 library(dplyr)
 #print the data frame
 starwars
@@ -78,17 +80,36 @@ names.f = starwars$name[starwars$gender == "female" & is.na(starwars$gender) == 
 names.f
 ```
 
+Using `dplyr` the syntax becomes more meaningful. 
+
+```{r}
+aux = filter(starwars, gender == "female")
+names.f = select(aux, name)
+names.f
+```
+
+The same but now we use the piping operator which has the effect of making the output to its left an input to its right.
+
+```{r}
+names.f = starwars %>% filter(gender == 'female') %>% select(name)
+names.f
+```
+
+
+
+
 
 ```{r}
 #extracting the number of characters by eye colour
 summary(as.factor(starwars$eye_color))
 ```
 
-Equivalently, we can use `dplyr` functions and the piping operator to save us some typing
+Equivalently, we can use `dplyr` functions and the piping operator to save us some typing and more meaningful syntax.
 
 ```{r}
 starwars %>% group_by(eye_color) %>% summarise(nr_char = n())
 ```
+
 Without the piping operator, in order to obtain the same output:
 
 ```{r}
@@ -103,33 +124,32 @@ starwars$films[1]
 ```
 Suppose I would like to extract the rows in `starwars` corresponding to characters with no hair colour and black eyes.
 
-In base R this would be
-```{r}
-starwars[starwars$hair_color == "none" & starwars$eye_color == "black", ]
-```
 
-In `dplyr` one can use the filter function and the results is more meaningful syntax
+In `dplyr` one can use the `filter()` function and this results is more meaningful syntax
 
 ```{r}
 # It's easier to use "filter" from the package dplyr
-filter(starwars, hair_color == "brown" & eye_color == "black")
+filter(starwars, hair_color == "none" & eye_color == "black")
 ```
 
 Equivalently,
 
 ```{r}
-# Multiple arguments are equivalent to and
+# Multiple arguments separated by commas are equivalent to logical "and""
 filter(starwars, hair_color == "none", eye_color == "black")
 ```
 
-If we can characters who have either no hair colour or black eyes
+Characters who have either no hair colour or black eyes
 
 ```{r}
 filter(starwars, hair_color == "none" | eye_color == "black")
 ```
 
 
-**EXERCISE**: extract the names of characters taller than Anakin Skywalker
+##**EXERCISE**: extract the names of characters taller than Anakin Skywalker
+
+
+(don't scroll down! Solution is below)
 
 
 
@@ -144,30 +164,42 @@ filter(starwars, hair_color == "none" | eye_color == "black")
 
 
 
-In base R
+
+
+
+
+
+
+
+
+
+
+
+###In base R:
 ```{r}
 ash = starwars$height[starwars$name == "Anakin Skywalker"]
+ash
+```
+Anakin Skywalker is tall!
+
+But there are many characters taller than Anakin
+```{r}
 starwars$name[starwars$height > ash]
 ```
 
-Using `dplyr`
-
+###Using `dplyr`:
 ```{r}
-starwars %>% filter(height > ash) %>% select(name)
+ash2 = starwars %>% filter(name == "Anakin Skywalker") %>% select(height) %>% as.numeric()
+starwars %>% filter(height > ash2) %>% select(name)
 ```
 
-If we want to exclude missing names
-
-```{r}
-starwars %>% filter(height > ash, is.na(name) == "FALSE") %>% select(name)
-```
 
 
 
 ##Something fancier
 
 ```{r}
-library(dygraphs)
+library(dygraphs)#you need to install the package first
 dygraph(nhtemp, main = "New Haven Temperatures") %>% 
   dyRangeSelector(dateWindow = c("1920-01-01", "1960-01-01"))
 ```
