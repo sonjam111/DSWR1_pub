@@ -1,7 +1,7 @@
 ---
 title: "Sample R Notebook"
 author: Sonia Mazzi
-date: 11/01/2019
+date: 28/05/2019
 output: html_notebook
 ---
 
@@ -34,7 +34,7 @@ When you save a notebook, an HTML file containing the code and output will be sa
 
 ##Executing R code
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+Try executing this chunk by clicking the *Run* button within the chunk ( the "play" button, green triangle) or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
 
 ```{r}
 plot(cars)
@@ -49,7 +49,7 @@ help(cars)
 ```
 
 ```{r}
-#print the names of the columns in the data frame cars
+#print the names of the columns of the data frame cars
 names(cars)
 ```
 
@@ -60,39 +60,48 @@ summary(cars)
 ##`starwars` data
 
 ```{r}
-#the data frame `starwars` is part of the package `dplyr`. We load it
+#the data frame `starwars` is part of the package `dplyr`. We load the package
 library(dplyr)
+```
+
+```{r}
 #print the data frame
 starwars
 ```
 
+There are two basic actions that are crucial when dealing with data frames (tibbles in this case): selecting row and columns.
+
+In `dplyr` the function `select()` is used to choose columns. The function `filter()` is used to choose rows.
+
+
+
 ```{r}
 #extract names of female characters in base R
-names.f = starwars$name[starwars$gender == "female"]
-names.f
+names_f_base <- starwars$name[starwars$gender == "female"]
+names_f_base
 ```
  
  As can be seen in the output there are some missing values.
 
 ```{r}
 #extract names of female characters and exclude the missing values
-names.f = starwars$name[starwars$gender == "female" & is.na(starwars$gender) == "FALSE"]
-names.f
+names_f_base <- starwars$name[starwars$gender == "female" & is.na(starwars$gender) == "FALSE"]
+names_f_base
 ```
 
 Using `dplyr` the syntax becomes more meaningful. 
 
 ```{r}
-aux = filter(starwars, gender == "female")
-names.f = select(aux, name)
-names.f
+aux <- filter(starwars, gender == "female")
+names_f <- select(aux, name)
+names_f
 ```
 
-The same but now we use the piping operator which has the effect of making the output to its left an input to its right.
+The same but now we use the piping operator `%>%` which has the effect of making the output to its left an input to its right.
 
 ```{r}
-names.f = starwars %>% filter(gender == 'female') %>% select(name)
-names.f
+names_f <- starwars %>% filter(gender == 'female') %>% select(name)
+names_f
 ```
 
 
@@ -104,6 +113,14 @@ names.f
 summary(as.factor(starwars$eye_color))
 ```
 
+The function `table()` also works
+
+```{r}
+#extracting the number of characters by eye colour
+table(as.factor(starwars$eye_color))
+```
+
+
 Equivalently, we can use `dplyr` functions and the piping operator to save us some typing and more meaningful syntax.
 
 ```{r}
@@ -113,7 +130,7 @@ starwars %>% group_by(eye_color) %>% summarise(nr_char = n())
 Without the piping operator, in order to obtain the same output:
 
 ```{r}
-aux = group_by(starwars, eye_color)
+aux <- group_by(starwars, eye_color)
 summarise(aux, nr_char = n())
 ```
 
@@ -177,7 +194,7 @@ filter(starwars, hair_color == "none" | eye_color == "black")
 
 ###In base R:
 ```{r}
-ash = starwars$height[starwars$name == "Anakin Skywalker"]
+ash <- starwars$height[starwars$name == "Anakin Skywalker"]
 ash
 ```
 Anakin Skywalker is tall!
@@ -189,7 +206,7 @@ starwars$name[starwars$height > ash]
 
 ###Using `dplyr`:
 ```{r}
-ash2 = starwars %>% filter(name == "Anakin Skywalker") %>% select(height) %>% as.numeric()
+ash2 <- starwars %>% filter(name == "Anakin Skywalker") %>% select(height) %>% as.numeric()
 starwars %>% filter(height > ash2) %>% select(name)
 ```
 
@@ -203,5 +220,4 @@ library(dygraphs)#you need to install the package first
 dygraph(nhtemp, main = "New Haven Temperatures") %>% 
   dyRangeSelector(dateWindow = c("1920-01-01", "1960-01-01"))
 ```
-
 
