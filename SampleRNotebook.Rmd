@@ -97,7 +97,7 @@ names_f <- select(aux, name)
 names_f
 ```
 
-The same but now we use the piping operator `%>%` which has the effect of making the output to its left an input to its right.
+The same but now we use the pipe operator `%>%` which has the effect of making the output to its left an input to its right.
 
 ```{r}
 names_f <- starwars %>% filter(gender == 'female') %>% select(name)
@@ -127,7 +127,7 @@ Equivalently, we can use `dplyr` functions and the piping operator to save us so
 starwars %>% group_by(eye_color) %>% summarise(nr_char = n())
 ```
 
-Without the piping operator, in order to obtain the same output:
+Without the pipe operator, in order to obtain the same output:
 
 ```{r}
 aux <- group_by(starwars, eye_color)
